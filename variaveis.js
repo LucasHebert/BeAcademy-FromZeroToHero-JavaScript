@@ -1,41 +1,54 @@
-// Declarar
-//Objetos
-
-const human = {
-    name: "Lucas Herbert",
-    age: 34,
-    weight: 70,
-    isAthlete: true,
-    walk: function walking() {
-        console.log('Eu ando bastante!')
-    }
-} // Objeto
+// Declarações
 
 /*
-console.log(human.age)
-console.log(human.name)
-console.log(human.walk())
+var name
+let name2
+const name3 <- observação
 */
 
-// Concatenar
-console.log("O humano " + human.name + " tem a idade " + human.age)
+/*
+name = "adksj"
+name2 = "jkdjkj"
+*/
 
-// Interpolação
-console.log(`O humano ${human.name} tem idade ${human.age}`)
+/*
+let name = "Lucas"
+console.log(name)
+name = 32
+console.log(name)
+name = ("Lucas")
+console.log(name)
+*/
 
-// Array
+/*
+const name = "Luan"
+console.log(name)
+name = "lucas " <- observação
+*/
 
-const animals = [
-    "Elefante", // 0
-    "Gato", // 1
-    "Leão", // 2
-    "Cachorro", // 3
-    { // 4
-        name: "Moacir",
-        age: 2,
-        weight: 4
-    }
-]
-// tamanho 5
+// Globais
+// Hoisting -> var
 
-console.log(animals[4].age)
+/*
+var name
+console.log('Variável name existe aqui?', name)
+{ // Scopo (bloco de código)
+    // Local
+    name = "Lucas"
+}
+console.log('Variável name existe aqui?', name)
+*/
+
+// Locais
+
+let name = "Lucas "
+
+console.log('Variável chegou aqui?', name)
+
+{ // Scopo (bloco de código)
+    // Local
+    let name = "Jenifer"
+    console.log('Variável chegou aqui?', name)
+}
+
+console.log('Variável chegou aqui?', name)
